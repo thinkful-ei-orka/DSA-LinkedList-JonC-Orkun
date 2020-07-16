@@ -1,9 +1,6 @@
-// 1. Create a linked list class
-// Walk through the linked list code in the curriculum and understand it well. Then write a linked list class and its core functions (insertFirst, insertLast, remove, find) from scratch.
-
 const _Node = require('./node');
 
-class LinkedList {
+class DoublyLinkedList {
     constructor() {
         this.head = null;
     }
@@ -135,10 +132,8 @@ class LinkedList {
           temp = temp.next;
         }
         return temp;
-    }
-    
-    
+      }
 
 }
 
-module.exports = LinkedList;
+module.exports = DoublyLinkedList;
