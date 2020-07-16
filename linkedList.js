@@ -74,12 +74,12 @@ class LinkedList {
   //Inserts a new node before a given node key
   insertBefore(key, item) {
     //Check if head exists
-    if (!this.head) {
-      return null;
-    }
+    // if (!this.head) {
+    //   return null;
+    // }
     //Find the node with given key
     const beforeNode = this.find(key);
-    console.log(beforeNode);
+
     //Create a new node before the node that was found
     this.head = new _Node(item, beforeNode);
   }
